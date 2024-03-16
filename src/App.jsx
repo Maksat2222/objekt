@@ -18,12 +18,11 @@ const App = () => {
   useEffect(() => {
     let interval;
     if (stop) {
+      console.log(stop);
       interval = setInterval(() => {
         createobject();
-        if (counter >= 5) {
-          setStop(false);
-        }
-      }, 5000);
+        
+      }, 1000);
     }
 
     return () => clearInterval(interval);
