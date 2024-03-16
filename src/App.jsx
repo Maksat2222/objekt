@@ -23,7 +23,7 @@ const App = () => {
         if (counter >= 5) {
           setStop(false);
         }
-      }, 2500);
+      }, 5000);
     }
 
     return () => clearInterval(interval);
